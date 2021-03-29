@@ -1,0 +1,134 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #FFE2E2;
+}   
+
+.header__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.logo {
+
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 55px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.item__link {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50%;
+    color: #313131;
+    transition: .8s;
+
+
+    &:hover {
+        color: #814d4d;
+        opacity: .5;
+    }
+}
+
+.header__control {
+    display: flex;
+    align-items: center;
+}
+
+.control__value {
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 50%;
+}
+
+.control__img {
+
+}
+
+.control__favorites,
+.control__profile,
+.control__cart {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #313131;
+}
+
+.control__burger {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.burger__icon {
+    position: relative;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.2s ease-in 0.2s;
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+}
+
+.burger__icon.burger__icon-active {
+    background-color: transparent;
+}
+    
+.burger__icon.burger__icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.burger__icon.burger__icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
