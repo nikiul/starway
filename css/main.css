@@ -463,4 +463,114 @@ body {
   letter-spacing: 0.05em;
   color: rgba(49, 49, 49, 0.8);
 }
+.inst {
+  padding-top: 200px;
+  padding-bottom: 40px;
+  background-color: #FCF1F1;
+}
+.inst__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.inst__edge {
+  width: 24%;
+}
+.edge__img {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+.edge__img:last-child {
+  margin-bottom: 0;
+}
+.edge__img2 {
+  width: 100%;
+}
+.edge__img3 {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+.edge__img-wrap {
+  position: relative;
+}
+.edge__img-desc {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.isnt__mid {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mid__icon {
+  margin-bottom: 60px;
+}
+.title__inst {
+  margin-bottom: 40px;
+  font-family: 'Cormorant Unicase', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #313131;
+}
+.title__inst span {
+  color: #FE9191;
+}
+.inst__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Cormorant Unicase', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #313131;
+}
+.inst__desc {
+  margin: 0;
+  margin-bottom: 84px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(49, 49, 49, 0.8);
+}
+.mid__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.mid__img-wrap img {
+  width: 31%;
+}
 /*# sourceMappingURL=main.css.map */
