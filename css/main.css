@@ -573,4 +573,43 @@ body {
 .mid__img-wrap img {
   width: 31%;
 }
+.fashion {
+  padding-top: 200px;
+  padding-bottom: 130px;
+  background-color: #FFE2E2;
+}
+.fashion__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fashion__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fashion__img:last-child {
+  position: relative;
+  left: -50px;
+  top: 45px;
+}
+.title__fashion {
+  text-align: left;
+}
+.fashion__desc {
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  color: rgba(49, 49, 49, 0.8);
+}
 /*# sourceMappingURL=main.css.map */
