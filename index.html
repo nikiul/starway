@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/Owl-carosuel/assets/owl.carousel.css">
+    <!-- <link rel="stylesheet" href="libs/Owl-carosuel/assets/owl.theme.default.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <title>STARWAY</title>
 </head>
@@ -16,6 +18,10 @@
         <div class="container">
 
             <div class="header__content">
+
+                <div class="mobile__burger">
+                    <span class="burger__icon"></span>
+                </div>
 
                 <a href="index.html" class="logo">
                     <img src="img/header/logo.svg" alt="">
@@ -46,7 +52,7 @@
 
                     <a href="#" class="control__favorites">
 
-                        <span class="control__value">1</span>
+                        <span class="control__value"></span>
                         <img class="control__img" src="img/header/header-favorites.svg" alt="">
 
                     </a>
@@ -59,7 +65,7 @@
 
                     <a href="#" class="control__cart">
 
-                        <span class="control__value">1</span>
+                        <span class="control__value"></span>
                         <img class="control__img" src="img/header/header-cart.svg" alt="">
 
                     </a>
@@ -78,11 +84,74 @@
 
     <main>
 
+        <section class="desctop-menu">
+
+            <div class="desctop-menu__content">
+
+                <div class="desctop-menu__imgs">
+
+                    <img class="" src="img/desctop-menu/desctop-menu1.png" data-slideimg="1">
+                    <!-- <img class="" src="img/desctop-menu/desctop-menu2.png" data-slideimg="2">
+                    <img class="" src="img/desctop-menu/desctop-menu3.png" data-slideimg="3">
+                    <img class="" src="img/desctop-menu/desctop-menu4.png" data-slideimg="4"> -->
+
+                </div>
+
+                <div class="desctop-menu__mid">
+
+                    <div class="desctop-menu__top">
+
+                        <a href="index.html" class="logo desctop-menu__logo">
+                            <img src="img/header/logo.svg" alt="">
+                        </a>
+
+                    </div>
+
+                        
+
+                    <nav class="desctop-menu__nav">
+                        <ul class="desctop-menu__list">
+                            <li class="desctop-menu__item">
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">Коллекция</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">Новинки</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="desctop-menu__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="desctop-menu__socials">
+                        <p>Социальные сети</p>
+                        <a href="#">Вконтакте</a>
+                        <a href="#">Инстаграм</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
         <section class="hero">
 
             <div class="hero__content">
 
-                <h1 class="title">Твой идеальный <br> образ на каждый день</h1>
+                <h1 class="title title__hero">Твой идеальный <br> образ на каждый день</h1>
                     
                 <div class="hero__images">
 
@@ -185,48 +254,48 @@
 
                     <div class="new-collection__top">
 
-                        <div class="new-collection__left">
+                        <div class="new-collection__desc">
 
-                            <h1 class="title title__new-collection">Бамбуковая <br> коллекция</h1>
+                            <h2 class="subtitle new-collection__subtitle">новая коллекция </h2>
 
-                            <p class="new-collection__desc">Задача организации, в особенности <br> 
-                                же начало повседневной работы по <br> формированию позиции позволяет <br> 
+                            <h1 class="title new-collection__title">Бамбуковая <br> коллекция</h1>
+
+                            <p class="desc__text">Задача организации, в особенности <br>
+                                же начало повседневной работы по <br> формированию позиции позволяет <br>
                                 оценить значение системы обучения <br> кадров, соответствует потребностям.
                             </p>
 
-                            <a href="#" class="btn">
+                            <a href="#" class="btn new-collection__btn">
                                 <span>каталог</span>
                                 <img src="img/btn-arrow.svg" alt="">
                             </a>
 
                         </div>
 
-                        <div class="new-collection__right">
+                        <div class="new-collection__imgs">
 
-                            <img class="new-collection__img2" src="img/new-collection/new-collection-img2.png" alt="">
-
-                            <img class="new-collection__img1" src="img/new-collection/new-collection-img1.png" alt="">
+                            <img class="new-collection-img1" src="img/new-collection/new-collection-img2.png" alt="">
+                            <img class="new-collection-img2" src="img/new-collection/new-collection-img1.png" alt="">
 
                         </div>
 
                     </div>
 
                     <div class="new-collection__bottom">
-                
-                        <div class="new-collection__right">
 
-                            <img class="new-collection__img3" src="img/new-collection/new-collection-img3.png" alt="">
-                            
-                            <img class="new-collection__img4" src="img/new-collection/new-collection-img4.png" alt="">
-                            
+                        <div class="new-collection__imgs">
+
+                            <img class="new-collection-img3" src="img/new-collection/new-collection-img3.png" alt="">
+                            <img class="new-collection-img4" src="img/new-collection/new-collection-img4.png" alt="">
+
                         </div>
-                        
-                        <div class="new-collection__left">
 
-                            <h1 class="title title__new-collection">Коллекция из <br> вискоза</h1>
+                        <div class="new-collection__desc">
 
-                            <p class="new-collection__desc">Задача организации, в особенности <br> 
-                                же начало повседневной работы по <br> формированию позиции позволяет <br> 
+                            <h1 class="title new-collection__title">Коллекция из <br> вискоза</h1>
+
+                            <p class="desc__text">Задача организации, в особенности <br>
+                                же начало повседневной работы по <br> формированию позиции позволяет <br>
                                 оценить значение системы обучения <br> кадров, соответствует потребностям.
                             </p>
 
@@ -239,6 +308,37 @@
 
                     </div>
 
+                </div>
+
+            </div>
+
+            <div class="new-collection--bg"></div>
+
+        </section>
+
+        <section class="our-collections">
+
+            <div class="container">
+
+                <h2 class="subtitle our-collections__subtitle">наши коллекции</h2>
+
+                <div class="our-collections__content">
+
+                    <a class="our-collections__item">
+
+                        <p class="our-collections__text">Бамбук</p>
+
+                        <img src="img/our-collections/our-coll-img1.png" alt="">
+
+                    </a>
+
+                    <a class="our-collections__item">
+
+                        <p class="our-collections__text">Шёлк</p>
+
+                        <img src="img/our-collections/our-coll-img2.png" alt="">
+
+                    </a>
 
                 </div>
 
@@ -266,54 +366,94 @@
 
                 <div class="products__content">
 
+                    <h2 class="subtitle products__subtitle">популярные модели</h2>
+
                     <h1 class="title title__products">Удобство в каждой <br> детали </h1>
 
                     <div class="products__wrap">
 
-                        <div href="#" class="products__item">
+                        <div class="products__desctop">
 
-                            <img class="item__icon" src="img/products/prod-like-black.svg" alt="">
+                            <div href="#" class="products__item">
 
-                            <img class="item__img" src="img/products/products-img1.png" alt="">
+                                <img class="item__icon" src="img/products/prod-like-black.svg" alt="">
 
-                            <p class="item__desc">Велосипедки</p>
+                                <img class="item__img" src="img/products/products-img1.png" alt="">
 
-                            <span class="item__value">2000₽</span>
+                                <p class="item__desc">Велосипедки</p>
+
+                                <span class="item__value">2000₽</span>
+
+                            </div>
+
+                            <a href="#" class="products__item">
+
+                                <img class="item__icon" src="img/products/prod-like-pink.svg" alt="">
+
+
+                                <img class="item__img" src="img/products/products-img2.png" alt="">
+
+                                <p class="item__desc">Шорты</p>
+
+                                <span class="item__value">2000₽</span>
+
+                            </a>
+
+                            <a href="#" class="products__item">
+
+                                <img class="item__img" src="img/products/products-img3.png" alt="">
+
+                                <p class="item__desc">Трусики слипы</p>
+
+                                <span class="item__value">2000₽</span>
+
+                            </a>
+
+                            <a href="#" class="products__item">
+
+                                <img class="item__img" src="img/products/products-img4.png" alt="">
+
+                                <p class="item__desc">Брюки</p>
+
+                                <span class="item__value">2000₽</span>
+
+                            </a>
 
                         </div>
 
-                        <a href="#" class="products__item">
+                        <div class=" owl-carousel owl-theme products__tablet">
 
-                            <img class="item__icon" src="img/products/prod-like-pink.svg" alt="">
+                            <a class="products__tablet-item">
 
+                                <img src="img/products/tablet-img1.png" alt="">
 
-                            <img class="item__img" src="img/products/products-img2.png" alt="">
+                                <p class="item__desc">Шёлковая Пижама</p>
 
-                            <p class="item__desc">Шорты</p>
+                                <span class="item__value">2000₽</span>
 
-                            <span class="item__value">2000₽</span>
+                            </a>
 
-                        </a>
+                            <a class="products__tablet-item">
 
-                        <a href="#" class="products__item">
+                                <img src="img/products/tablet-img2.png" alt="">
 
-                            <img class="item__img" src="img/products/products-img3.png" alt="">
+                                <p class="item__desc">Шёлковая Пижама</p>
 
-                            <p class="item__desc">Трусики слипы</p>
+                                <span class="item__value">2000₽</span>
 
-                            <span class="item__value">2000₽</span>
+                            </a>
 
-                        </a>
+                            <a class="products__tablet-item">
 
-                        <a href="#" class="products__item">
+                                <img src="img/products/tablet-img3.png" alt="">
 
-                            <img class="item__img" src="img/products/products-img4.png" alt="">
+                                <p class="item__desc">Шёлковая Пижама</p>
 
-                            <p class="item__desc">Брюки</p>
+                                <span class="item__value">2000₽</span>
 
-                            <span class="item__value">2000₽</span>
+                            </a>
 
-                        </a>
+                        </div>
 
                     </div>
 
@@ -387,6 +527,8 @@
 
             </div>
 
+            <div class="list__bg"></div>
+
         </section>
 
         <section class="fashion">
@@ -404,6 +546,8 @@
 
                     <div class="fashion__right">
 
+                        <h2 class="subtitle fashion__subtitle">о нас</h2>
+
                         <h1 class="title title__fashion">Создаём твой <br> образ</h1>
 
                         <p class="fashion__desc">Задача организации, в особенности <br>
@@ -413,7 +557,7 @@
                             соответствует потребностям.
                         </p>
 
-                        <a href="#" class="btn">
+                        <a href="#" class="btn fashion__btn">
                             <span>о нас</span>
                             <img src="img/btn-arrow.svg" alt="">
                         </a>
@@ -456,15 +600,30 @@
 
                 <div class="subscribe__content">
 
+                    <h2 class="subtitle subscribe__subtitle">новостная рассылка</h2>
+
                     <h1 class="title title__subscribe">Подпишитесь, чтобы получать <br> последние обновления</h1>
+
+                    <h1 class="title title__subscribe--tablet">Получайте новости <br> обновлений коллекции</h1>
 
                     <form action="" class="subscribe__form">
 
-                        <input type="email" class="subscribe__input" placeholder="Укажите свой адрес электронной почты">
+                        <input type="email" class="subscribe__input input1" placeholder="Укажите свой адрес электронной почты">
+                        <input type="email" class="subscribe__input input2" placeholder="Введите Email">
+                        <input type="email" class="subscribe__input input3" placeholder="email">
 
                         <input class="btn btn__subscribe" type="submit" value="подписаться">
 
                     </form>
+
+                    <div class="subscribe__img">
+
+                        <img class="subscribe__img1" src="img/subscribe/sub-img1.png" alt="">
+                        <img class="subscribe__img2" src="img/subscribe/sub-img2.png" alt="">
+                        <img class="subscribe__img3" src="img/subscribe/sub-img3.png" alt="">
+                        <img class="subscribe__img4" src="img/subscribe/sub-img4.png" alt="">
+
+                    </div>
 
                 </div>
 
@@ -490,16 +649,16 @@
 
                     <ul class="nav__list">
 
-                        <li class="nav__item">
+                        <li class="nav__item nav__item--footer">
                             <a class="item__link" href="#">новинки</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item nav__item--footer">
                             <a class="item__link" href="#">коллекция</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item nav__item--footer">
                             <a class="item__link" href="#">о нас</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item nav__item--footer">
                             <a class="item__link" href="#">контакты</a>
                         </li>
                         
@@ -509,8 +668,13 @@
 
                 <div class="footer__socials">
 
-                    <img src="img/footer/footer-vk.svg" alt="">
-                    <img src="img/footer/footer-inst.svg" alt="">
+                    <a class="socials__link" href="#">
+                        <img src="img/footer/footer-vk.svg" alt="">
+                    </a>
+                    
+                    <a class="socials__link" href="#">
+                        <img src="img/footer/footer-inst.svg" alt="">
+                    </a>
 
                 </div>
 
@@ -520,6 +684,8 @@
 
     </footer>
 
+    <script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="libs/Owl-carosuel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

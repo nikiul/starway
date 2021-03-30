@@ -2,28 +2,66 @@
     padding-top: 230px;
     padding-bottom: 130px;
     background-color: #FCF1F1;
+
+    @media (max-width:  768px) {
+        padding-top: 180px;
+        padding-bottom: 90px;
+    }
 }
 
 .products__content {
 
 }
 
+.products__subtitle {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+        padding-left: 50px;
+    }
+}
+
 .title__products {
     text-align: left;
-    margin-left: 100px;
+    padding-left: 100px;
+
+    @media (max-width: 768px) {
+        padding-left: 50px;
+        margin-bottom: 130px;
+        font-size: 50px;
+        line-height: 100%;
+    }
 }
 
 .products__wrap {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+}
+
+.products__desctop {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
+
+
 
 .products__item {
     position: relative;
     width: 24%;
     text-decoration: none;
+
+    @media (max-width: 1140px) {
+        width: 24%;
+    }
 }
 
 .item__icon {
@@ -33,6 +71,7 @@
 }
 
 .item__img {
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -52,4 +91,87 @@
     line-height: 70%;
     letter-spacing: 0.05em;
     color: rgba(49, 49, 49, 0.8);
+}
+
+// .products__tablet {
+//     display: none;
+
+//     @media (max-width: 768px) {
+//         display: flex;
+//     }
+// }
+
+.owl-carousel.owl-loaded {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.products__tablet-item {
+    text-decoration: none;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 50%;
+        letter-spacing: 0.05em;
+    }
+
+    span {
+        font-size: 12px;
+        line-height: 70%;
+        letter-spacing: 0.05em;
+        color: rgba(49, 49, 49, 0.8);
+    }
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 16px;
+    background-color: #FFE2E2;
+    top: -16%;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: rotate(-180deg);
+    outline: none;
+
+    span {
+        display: none;
+    }
+
+    // &:hover {
+    //     background-color:;
+    // }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 16px;
+    background-color: #FFE2E2;
+    top: -16%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    outline: none;
+
+    span {
+        display: none;
+    }
 }

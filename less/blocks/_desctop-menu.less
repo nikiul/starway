@@ -1,0 +1,128 @@
+.desctop-menu {
+    width: 100%;
+    height: 102%;
+    position: fixed;
+    transform: translateY(0%);
+    background-color: #fff;
+    transform: translateY(-150%);
+    transition: all 0.5s ease-in;
+    overflow-y: scroll;
+}
+
+.desctop-menu--active {
+    transform: translateY(-8%);
+
+    // @media (max-width: )
+}
+
+.desctop-menu__content {
+    display: flex;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.desctop-menu__imgs {
+    width: 43%;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        // opacity: 0;
+        transition: .8s;
+        position: absolute;
+    }
+
+    @media (max-width: 1025px) {
+        width: 30%;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.desctop-menu__mid {
+    width: 31.5%;
+    margin-top: 2%;
+    padding-left: 89px;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.logo {
+
+}
+
+.desctop-menu__logo {
+
+}
+
+.desctop-menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desctop-menu__nav {
+    margin: 0;
+    margin-top: 20%;
+    padding: 0;
+}
+
+.desctop-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.desctop-menu__item {
+    margin-bottom: 28px;
+
+    a {
+        text-decoration: none;
+        font-family: 'Cormorant Unicase', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: 28px;
+        color: #313131;
+        transition: .4s;
+
+        &:hover {
+            color: #814d4d;
+        }
+    }
+}
+
+.desctop-menu__socials {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: .2em;
+    }
+
+    a {
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: .2em;
+        text-decoration: none;
+        color: rgba(49,49,49,.8);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

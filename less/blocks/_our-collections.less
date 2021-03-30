@@ -1,0 +1,46 @@
+.our-collections {
+    display: none;
+    background-color: #FCF1F1;
+    padding-bottom: 180px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.our-collections__subtitle {
+    padding-left: 40px;
+}
+
+.our-collections__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-collections__item {
+    width: 48%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+        width: 100%;
+    }
+}
+
+.our-collections__text {
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Cormorant Unicase', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FCF1F1;
+}

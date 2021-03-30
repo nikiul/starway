@@ -2,12 +2,21 @@
     padding-top: 200px;
     padding-bottom: 130px;
     background-color: #FFE2E2;
+
+    @media (max-width: 768px) {
+        padding-top: 87px;
+        padding-bottom: 90px;
+    }
 }
 
 .fashion__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 768px) {
+        align-items: end;
+    }
 }
 
 .fashion__left {
@@ -22,6 +31,16 @@
         position: relative;
         left: -50px;
         top: 45px;
+
+        @media (max-width: 946px) {
+            width: 140px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 946px) {
+        width: 250px;
+        height: 400px;
     }
 }
 
@@ -29,8 +48,22 @@
 
 }
 
+.fashion__subtitle {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
 .title__fashion {
     text-align: left;
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 50px;
+        line-height: 100%;
+    }
 }
 
 .fashion__desc {
@@ -40,8 +73,24 @@
     line-height: 200%;
     letter-spacing: 0.05em;
     color: rgba(49, 49, 49, 0.8);
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 180%;
+    }
 }
 
-.btn {
+.fashion__btn {
+    @media (max-width: 768px) {
+        padding: 22px 95px;
+    }
 
+    span {
+        @media (max-width: 768px) {
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
 }

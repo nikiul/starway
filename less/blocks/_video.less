@@ -1,10 +1,20 @@
 .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 720px;
-    max-height: 720px;
+    min-height: 574px;
+    max-height: 574px;
+    // min-height: 720px;
+    // max-height: 720px;
     overflow: hidden;
     position: relative;
     background: #fcf1f1;
+
+    @media (max-width: 768px) {
+        min-height: 400px;
+        max-height: 400px;
+    }
 }
 
 .video__bg {
