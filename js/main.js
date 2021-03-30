@@ -19,20 +19,55 @@ mobileBurger.addEventListener("click", function(){
 })
 
 // Карусель
-$('.products__tablet').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
+// $('.desctop-menu__imgs').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:false,
+//     dots:false,
+//     responsive:{
+//         0:{
+//             items:1
+//         }
+//     }
+// })
+
+
+// $('.products__tablet').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     dots: false,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:3
+//         }
+//     }
+// })
+
+$(document).ready(function(){
+
+    $('.products__tablet').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
         }
-    }
-})
+    })
+
+});
