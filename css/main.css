@@ -1252,9 +1252,13 @@ body {
 }
 @media (max-width: 480px) {
   .products__tablet-item p {
-    margin-left: 20px;
     margin-bottom: 5px;
     line-height: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .products__tablet-item p {
+    margin-left: 20px;
   }
 }
 .products__tablet-item span {
@@ -1263,7 +1267,7 @@ body {
   letter-spacing: 0.05em;
   color: rgba(49, 49, 49, 0.8);
 }
-@media (max-width: 460px) {
+@media (max-width: 375px) {
   .products__tablet-item span {
     margin-left: 20px;
   }
