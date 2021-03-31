@@ -7,6 +7,12 @@
         padding-bottom: 0;
         background-color: #FFE2E2;
     }
+
+    
+    @media (max-width: 375px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
 }
 
 .new-collection--bg {
@@ -23,6 +29,10 @@
 
         @media (max-width: 768px) {
             display: block;
+        }
+
+        @media (max-width: 375px) {
+            display: none;
         }
     }
 }
@@ -50,6 +60,10 @@
     @media (max-width: 768px) {
         margin-bottom: 40px;
     }
+
+    @media (max-width: 680px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .new-collection__bottom {
@@ -69,12 +83,28 @@
 
 .new-collection__desc {
     
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
 }
 
 .new-collection__subtitle {
     display: none;
 
     @media (max-width: 768px) {
+        display: block;
+    }
+
+    @media (max-width: 680px) {
+        display: none;
+    }
+}
+
+.new-collection__subtitle--mobile {
+    display: none;
+
+    @media (max-width: 680px) {
         display: block;
     }
 }
@@ -85,6 +115,11 @@
     @media (max-width: 768px) {
         margin-bottom: 40px;
         font-size: 50px;
+        line-height: 100%;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 30px;
         line-height: 100%;
     }
 }
@@ -102,12 +137,21 @@
         font-size: 14px;
         line-height: 180%;
     }
+
+    @media (max-width: 420px) {
+        line-height: 160%;
+    }
 }
 
 .new-collection__btn {
 
     @media (max-width: 768px) {
         padding: 22px 85px;
+    }
+
+    @media (max-width: 420px) {
+        display: flex;
+        justify-content: center;
     }
 
     span {
@@ -122,6 +166,18 @@
 .new-collection__imgs {
     display: flex;
     align-items: center;
+
+    @media (max-width: 680px) {
+        margin-bottom: 90px;
+        padding-right: 25px;
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 40px;
+        padding-right: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
 }
 
 .new-collection-img1 {
@@ -138,6 +194,14 @@
     @media (max-width: 768px) {
         bottom: -150px;   
     }
+
+    @media (max-width: 420px) {
+        bottom: 0;
+        width: 35%;
+        // width: 100px;
+        // height: 150px;
+        right: -15px;
+    }
 }
 
 .new-collection-img2 {
@@ -145,6 +209,15 @@
     @media (max-width: 946px) {
         width: 250px;
         height: 400px;
+    }
+
+    @media (max-width: 680px) {
+        width: 250px;
+        height: 375px; 
+    }
+
+    @media (max-width: 420px) {
+        width: 70%;
     }
 }
 

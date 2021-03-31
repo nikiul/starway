@@ -53,6 +53,7 @@
 
 .desctop-menu__mid {
     width: 31.5%;
+    padding-bottom: 30px;
     margin-top: 45px;
     padding-bottom: 45px;
     padding-left: 89px;
@@ -62,8 +63,17 @@
         width: 0;
     }
 
+    @media (max-width: 1000px) {
+        width: 50%;
+    }
+
     @media (max-width: 768px) {
         padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
     }
 }
 

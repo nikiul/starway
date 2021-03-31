@@ -7,12 +7,20 @@
         padding-top: 50px;
         padding-bottom: 0;
     }
+
+    @media (max-width: 375px) {
+        padding-bottom: 20px;
+    }
 }
 
 .inst__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: 680px) {
+        justify-content: center;   
+    }
 }
 
 .inst__edge {
@@ -20,6 +28,10 @@
 
     @media (max-width: 900px) {
         width: auto;
+    }
+
+    @media (max-width: 680px) {
+        display: none;
     }
 }   
 
@@ -90,6 +102,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 680px) {
+        width: 100%;
+    }
 }
 
 .mid__icon {
@@ -103,6 +119,10 @@
 
     @media (max-width: 725px) {
         margin-bottom: 30px;
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 40px;
     }
 }
 
@@ -132,6 +152,12 @@
         font-size: 38px;
         line-height: 38px;
     }
+
+    @media (max-width: 375px) {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 100%;
+    }
 }
 
 .inst__subtitle {
@@ -154,6 +180,12 @@
         margin-bottom: 20px;
         font-size: 32px;
         line-height: 32px;
+    }
+
+    @media (max-width: 375px) {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 100%;
     }
 }
 
@@ -178,12 +210,17 @@
         font-size: 14px;
         line-height: 14px;
     }
+
+    @media (max-width: 375px) {
+        margin-bottom: 47px;
+        font-size: 14px;
+        line-height: 160%;
+    }
 }   
 
 .mid__img-wrap {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
     width: 100%;
 
     img {
@@ -197,10 +234,23 @@
         @media (max-width: 725px) {
             width: 31%;
         }
+
+        @media (max-width: 680px) {
+            width: 110px;
+            height: 110px;
+        }
+
+        @media (max-width: 375px) {
+            width: 31%;
+        }
+    }
+
+    @media (max-width: 680px) {
+        justify-content: space-around;
     }
 }
 
-.list__bg {
+.inst__bg {
     display: none;
 
     @media (max-width: 768px) {
@@ -209,5 +259,9 @@
         height: 164px;
         background: linear-gradient(180deg, #FFE2E2 0%, #FCF1F1 100%);
         transform: rotate(-180deg);
+    }
+
+    @media (max-width: 375px) {
+        display: none;
     }
 }

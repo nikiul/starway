@@ -18,6 +18,16 @@ mobileBurger.addEventListener("click", function(){
     bodyLock.classList.toggle("body__lock");
 })
 
+// Фиксируем шапку
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 1){
+//     $('header').addClass("sticky");
+//     }
+//     else{
+//     $('header').removeClass("sticky");
+//     }
+// });
+
 // Карусель
 // $('.desctop-menu__imgs').owlCarousel({
 //     loop:true,
@@ -61,10 +71,7 @@ $(document).ready(function(){
             0:{
                 items:1
             },
-            600:{
-                items:3
-            },
-            1000:{
+            375:{
                 items:3
             }
         }
