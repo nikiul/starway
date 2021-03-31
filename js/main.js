@@ -52,6 +52,7 @@ $(document).ready(function(){
             }
         }
     })
+
     // Карусель
     $('.products__tablet').owlCarousel({
         loop:true,
@@ -76,10 +77,10 @@ $(document).ready(function(){
         cover: true,
         timer: false,
         slides: [
-            { src: "../img/desctop-menu/desctop-menu1.png" },
-            { src: "../img/desctop-menu/desctop-menu2.png" },
-            { src: "../img/desctop-menu/desctop-menu3.png" },
-            { src: "../img/desctop-menu/desctop-menu4.png" } 
+            { src: "img/desctop-menu/desctop-menu1.png" },
+            { src: "img/desctop-menu/desctop-menu2.png" },
+            { src: "img/desctop-menu/desctop-menu3.png" },
+            { src: "img/desctop-menu/desctop-menu4.png" } 
         ]
     });
 });
