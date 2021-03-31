@@ -1866,6 +1866,20 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
+@media (max-height: 600px) {
+  .title__contacts {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-height: 380px) {
+  .title__contacts {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
 .contacts__subtitle {
   margin: 0;
   margin-bottom: 40px;
@@ -1874,6 +1888,11 @@ body {
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.05em;
+}
+@media (max-height: 600px) {
+  .contacts__subtitle {
+    margin-bottom: 10px;
+  }
 }
 .contacts__link {
   margin-bottom: 20px;
@@ -1889,6 +1908,13 @@ body {
   letter-spacing: 0.05em;
   color: #313131;
   text-decoration: none;
+}
+@media (max-height: 600px) {
+  .contacts__link {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 .subscribe {
   padding-top: 130px;
